@@ -1,0 +1,35 @@
+# env
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+
+# downloaded model IRs (pull them with download_models.py)
+models/intel/
+models/public/
+*.bin
+*.xml
+!models/README.md
+
+# generated at runtime
+incidents.csv
+benchmark_results.json
+*.log
+
+# editor / OS
+.vscode/
+.idea/
+.claude/
+*.swp
+.DS_Store
+Thumbs.db
+
+# media
+assets/alert_*.wav
+assets/test_clip.mp4
