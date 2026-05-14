@@ -51,11 +51,12 @@ def run_one(video: str, models_root: str, precision: str, mode: str, max_frames:
             frame_count += 1
             if max_frames and frame_count >= max_frames:
                 break
+        t_end = time.time()
     finally:
         pipe.shutdown()
         cap.release()
 
-    elapsed = time.time() - t_start
+    elapsed = t_end - t_start
     fps = frame_count / elapsed if elapsed > 0 else 0.0
     mean_ms = statistics.mean(latencies_ms) if latencies_ms else 0.0
     p95_ms = (
