@@ -1,4 +1,22 @@
-# DriveAware
+<div align="center">
+
+# 🚗 DriveAware — Real-Time Drowsiness & Distraction Detection
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![OpenVINO](https://img.shields.io/badge/OpenVINO-00C7FD?style=for-the-badge&logo=intel&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Offline](https://img.shields.io/badge/100%25%20Offline-2EA44F?style=for-the-badge)
+
+**Driver fatigue detection on a plain laptop CPU — no GPU, no cloud, no subscription.**
+
+<!-- Hero image: record a 10s clip of the live preview detecting eyes-closed / head-turn with the red alert border, save it as docs/demo.gif, then uncomment the next line: -->
+<!-- ![DriveAware demo](docs/demo.gif) -->
+
+</div>
+
+> **Highlights** — 4 chained OpenVINO models · 30s rolling PERCLOS scorer · **25-30 FPS** on an 8th-gen i5 · model bundle **under 8 MB** · audio + visual + CSV alerts
+
+---
 
 Real-time driver drowsiness and distraction detection that runs on a plain Intel laptop CPU. No GPU, no cloud, no monthly fee. A webcam, four small OpenVINO models chained together, and a 30-second rolling PERCLOS scorer on top.
 
